@@ -9,13 +9,13 @@ button.bars {
   padding-top: 50px;
 }
 .play {
-  background-color: red;
+  background-color: green;
   color: white;
   height: calc(100vh - 372px);
   text-transform: uppercase;
 }
 .dplay {
-  background-color: green;
+  background-color: red;
   height: calc(100vh - 372px);
   text-transform: uppercase;
   color: white;
