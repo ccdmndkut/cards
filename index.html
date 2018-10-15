@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Vue</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-content>
+                <template v-if="cardsLeft == 0">
+                    <v-btn class='but new' @click='restart'> New Game
+                    </v-btn>
+                </template>
+                <template v-if="cardsLeft > 0">
+                    <v-container>
+
+                        <v-layout row wrap>
+
+                            <div v-bind:class="[{ dplay: !play.myboo }, { play: play.myboo }, { playx: play.myboo==null }]">
+                                <v-card class='mycard' width="30vw">
+
+                                    <div id="buttons">
+                                        <v-btn class='mb-3' block round class='but'
+                                            @click='high' color="success">
+                                            HIGH = 10
+                                            - A
+                                        </v-btn>
+                                        <v-btn class='mb-3' block style="color:black"
+                                            round class='but' @click='med'
+                                            color="warning">
+                                            MID = 7 -
+                                            9
+                                        </v-btn>
+                                        <v-btn class='mb-3' block round class='but'
+                                            @click='low' color="error">
+                                            LOW = 2 -
+                                            6
+                                        </v-btn>
+                                        <v-divider></v-divider>
+                                    </div>
+                                    <!-- <input class='inp' v-model="inone" @keydown.enter="checker"> -->
+                                    <h1>{{ cardsLeft }}</h1>
+                                    <h1>{{ tens }} ten cards left</h1>
+                                    <h1>{{ mids }} mid cards left</h1>
+                                    <h1>{{ lows }} low cards left</h1>
+
+                                    <h1>{{ this.play.mystr }}</h1>
+                                    <h1>score is {{ total }}</h1>
+                                </v-card>
+
+                            </div>
+
+                        </v-layout>
+
+                    </v-container>
+
+                </template>
+            </v-content>
+        </v-app>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
