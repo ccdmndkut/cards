@@ -1,3 +1,21 @@
+
+
+// myfunc = function () {
+//   items = ["2a", "3a", "4a", "5a", "6a", "7a", "8a", "9a", "10a", "ja", "qa", "ka"]
+//   var total = items.length
+//   var num = Math.floor(Math.random() * items.length)
+//   var item = items[num];
+//   items.splice(num, 1)
+//   console.log(num)
+//   console.log(item)
+//   console.log(total)
+
+
+
+
+}
+
+
 window.onload = function() {
   var app = new Vue({
     el: "#app",
