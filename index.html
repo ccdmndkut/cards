@@ -20,31 +20,38 @@
                     <v-layout column>
                         <v-card class='mycard'>
                             <v-btn class='mb-0 mt-0 headline bars' block @click='high'
-                                color="success">
+                                color="green">
                                 HIGH = 10
                                 - A
                             </v-btn>
                             <v-btn class='mb-0 mt-0 headline bars' block style="color:black"
-                                @click='med' color="warning">
+                                @click='med' color="orange">
                                 MID = 7 -
                                 9
                             </v-btn>
                             <v-btn class='mb-0 mt-0 headline bars' block @click='low'
-                                color="error">
+                                color="red">
                                 LOW = 2 -
                                 6
                             </v-btn>
 
                             <v-flex xs12>
-                                <v-card-text class='bott'>
-                                    <h1>{{ cardsLeft }}</h1>
-                                    <h1>{{ tens }} ten cards left</h1>
-                                    <h1>{{ mids }} mid cards left</h1>
-                                    <h1>{{ lows }} low cards left</h1>
-                                    <h1>{{ this.play.mystr }}</h1>
-                                    <h1>score is {{ total }}</h1>
+                                <v-card-text class='bott subheading'>
+                                    <div>{{ cardsLeft }}</div>
+                                    <v-divider></v-divider>
+                                    <div>{{ tens }} ten cards left</div>
+                                    <v-divider></v-divider>
+                                    <div>{{ mids }} mid cards left</div>
+                                    <v-divider></v-divider>
+                                    <div>{{ lows }} low cards left</div>
+                                    <v-divider></v-divider>
+                                    <div>score is {{ total }}</div>
                                 </v-card-text>
+                                <v-card-text class='display-1 text-xs-center pt-5'
+                                    v-bind:class="[{ dplay: !play.myboo }, { play: play.myboo }, { playx: play.myboo==null}]">
+                                    <div>{{ this.play.mystr }}</div>
 
+                                </v-card-text>
                             </v-flex>
                         </v-card>
 

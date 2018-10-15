@@ -8,3 +8,21 @@ button.bars {
 .v-card__text.bott {
   padding-top: 50px;
 }
+.play {
+  background-color: red;
+  color: white;
+  height: calc(100vh - 372px);
+  text-transform: uppercase;
+}
+.dplay {
+  background-color: green;
+  height: calc(100vh - 372px);
+  text-transform: uppercase;
+  color: white;
+}
+.playx {
+  background-color: rgba(255, 166, 0, 0.452);
+  height: calc(100vh - 372px);
+  text-transform: uppercase;
+  color: black;
+}
