@@ -3,26 +3,42 @@ button.bars {
 }
 
 .mycard {
-  height: 95vh;
+  height: 100%;
 }
-.v-card__text.bott {
-  padding-top: 50px;
-}
+
+.v-card__text.bott {}
+
 .play {
   background-color: green;
   color: white;
-  height: calc(100vh - 372px);
+  position: absolute;
+  bottom: 0px;
   text-transform: uppercase;
 }
+
 .dplay {
   background-color: red;
-  height: calc(100vh - 372px);
   text-transform: uppercase;
   color: white;
+  position: absolute;
+  bottom: 0px;
 }
+
+.botpad {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
 .playx {
+
   background-color: rgba(255, 166, 0, 0.452);
-  height: calc(100vh - 372px);
+  position: absolute;
+  bottom: 0px;
   text-transform: uppercase;
   color: black;
+}
+
+.bott {
+  margin-bottom: 90px;
 }
